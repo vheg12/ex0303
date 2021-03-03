@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+        <title>Jquery Mobile UI 시작하기</title>
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+    </head>
+    <body>
+        <div id=main data-role="page">
+            <div data-role="header" data-theme="b">
+                <h1>jquery 모바일 메인페이지</h1>
+            </div>
+            <div data-role="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias similique non magni? Quam, totam excepturi ea labore magnam explicabo dolores voluptas quis exercitationem! Est pariatur voluptas, impedit assumenda vitae soluta dolore sed minima ad quaerat aspernatur fugiat quae, corporis maxime ab porro rem quibusdam harum, officiis adipisci nulla expedita sapiente!
+            </div>
+            <ul data-role="listview">
+                <li data-role="list-divider">내부 도메인</li>
+                <li><a href="#sub">내부 서브 페이지로 이동</a></li>
+                <li><a href="#sub" data-rel="dialog">서브 페이지로 이동 (다이얼로그)</a></li>
+                <li><a href="sub.html" data-rel="dialog" target="_self">외부 서브 페이지로 이동</a></li>
+                <li><a href="main.html" data-rel="dialog" target="_self">메뉴 페이지로 이동</a></li>
+            </ul>
+            <ul data-role="listview" contextmenu="">
+                <li data-role="list-divider">외부 도메인</li>
+                <li><a href="https://google.co.kr" >구글</a></li>
+            </ul>
+            <div data-role="footer">
+                <h3>인천일보아카데미</h3>
+            </div>
+        </div>
+
+        <div id=sub data-role="page">
+            <div data-role="header" data-theme="d">
+                <h1>jquery 모바일 서브 페이지</h1>
+            </div>
+            <div data-role="content" data-theme="d">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias similique non magni? Quam, totam excepturi ea labore magnam explicabo dolores voluptas quis exercitationem! Est pariatur voluptas, impedit assumenda vitae soluta dolore sed minima ad quaerat aspernatur fugiat quae, corporis maxime ab porro rem quibusdam harum, officiis adipisci nulla expedita sapiente!
+            </div>
+                <ul data-role="listview" data-theme="d">
+                    <li><a href="#main">메인 페이지로 이동</a></li>
+                </ul>
+            <div data-role="footer" data-theme="d">
+                <h3>인천일보아카데미</h3>
+            </div>
+        </div>
+    </body>
+</html>
